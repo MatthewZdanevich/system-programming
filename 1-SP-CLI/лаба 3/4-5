@@ -22,7 +22,7 @@ while true; do
             zenity --info --text="Котировка EUR: 3.80"
             ;;
         "RUB")
-            zenity --info --text="Котировка RUB: 28.60"
+            zenity --info --text="Котировка RUB: 0.036"
             ;;
         *)
             zenity --error --text="Неверный выбор. Попробуйте снова."
