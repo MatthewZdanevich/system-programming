@@ -1,0 +1,21 @@
+#!/bin/bash
+
+
+currencies=("USD" "EUR" "RUB")
+
+currency=$(zenity --list --title="Выберите валюту" --column="Валюты" "${currencies[@]}")
+
+case $currency in
+    "USD")
+        zenity --info --text="Котировка USD: 3.18"
+        ;;
+    "EUR")
+        zenity --info --text="Котировка EUR: 3.80"
+        ;;
+    "RUB")
+        zenity --info --text="Котировка RUB: 28.60"
+        ;;
+    *)
+        zenity --error --text="Неверный выбор. Попробуйте снова."
+        ;;
+esac

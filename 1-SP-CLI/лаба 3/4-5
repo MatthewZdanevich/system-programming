@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# Список валют
+currencies=("USD" "EUR" "RUB")
+
+while true; do
+    # Выбор валюты с кнопкой "exit"
+    currency=$(zenity --list --title="Выберите валюту" --column="Валюты" --extra-button="Выход" "${currencies[@]}")
+
+    # Проверка на выход из программы
+    if [[ "$currency" == "Выход" || -z "$currency" ]]; then
+        zenity --info --text="Выход из программы."
+        break
+    fi
+
+    # Вывод котировки выбранной валюты
+    case $currency in
+        "USD")
+            zenity --info --text="Котировка USD: 3.18"
+            ;;
+        "EUR")
+            zenity --info --text="Котировка EUR: 3.80"
+            ;;
+        "RUB")
+            zenity --info --text="Котировка RUB: 28.60"
+            ;;
+        *)
+            zenity --error --text="Неверный выбор. Попробуйте снова."
+            ;;
+    esac
+done

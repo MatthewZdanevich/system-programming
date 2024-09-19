@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Запрос имени
+name=$(zenity --entry --text="Введите ваше имя:" --title="Имя")
+
+# Запрос профессии
+profession=$(zenity --entry --text="Введите вашу профессию:" --title="Профессия")
+
+# Вывод имени и профессии
+zenity --info --text="Ваше имя: $name, Ваша профессия: $profession"
