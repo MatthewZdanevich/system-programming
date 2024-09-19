@@ -68,4 +68,5 @@ return
 filename="system_report.html"
 write_html_page > $filename
 echo "HTML report generated successfully: $filename"
+firefox system_report.html
 microsoft-edge system_report.html
