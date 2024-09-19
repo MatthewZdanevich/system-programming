@@ -1,0 +1,8 @@
+#!/bin/bash
+echo "Input the amount of terminals:"
+read num_terminals
+
+for ((i = 1; i <= num_terminals; i++))
+do
+    gnome-terminal -- bash -c "firefox; exec bash" &
+done

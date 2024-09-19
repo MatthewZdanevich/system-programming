@@ -1,0 +1,5 @@
+Grishko, 19, 191, male
+Hilchuk, 19, 189, male
+Smal, 16, 185, male
+Stankewich, 45, 176, male
+Zdanewich, 19, 180, male

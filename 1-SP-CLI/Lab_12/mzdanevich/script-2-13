@@ -1,0 +1,2 @@
+#!/bin/bash
+sed 's/[^a-zA-Z]//g' base-1.txt > base-1-only-letters.txt

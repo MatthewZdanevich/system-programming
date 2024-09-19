@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "Script from dir2"
+echo "x = $x (from dir2)"

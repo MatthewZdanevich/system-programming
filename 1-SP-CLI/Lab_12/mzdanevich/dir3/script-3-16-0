@@ -1,0 +1,4 @@
+#!/bin/bash
+source ../dir1/script-3-16
+source ../dir2/script-3-16
+echo "x = $x (from dir3)"

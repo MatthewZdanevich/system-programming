@@ -1,0 +1,6 @@
+#!/bin/bash
+if [ -f script-1-1-1 ]
+	then ./script-1-1-1
+else
+	echo "Script does not exist"
+fi

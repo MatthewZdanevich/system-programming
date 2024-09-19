@@ -1,0 +1,2 @@
+#!/bin/bash
+awk -F", " 'NR == 1 || $2 < min_age {min_age = $2; name = $1} END {print name}' base-1.txt

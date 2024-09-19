@@ -1,0 +1,16 @@
+#!/bin/bash
+touch file-3.txt
+echo "apple" >> file-3.txt
+echo "strawberry" >> file-3.txt
+echo "pear" >> file-3.txt
+
+touch file-4.txt
+echo "orange" >> file-4.txt
+echo "banane" >> file-4.txt
+echo "apple" >> file-4.txt
+
+sort file-3.txt > file-3-temp.txt
+sort file-4.txt > file-4-temp.txt
+
+comm -3 file-3-temp.txt file-4-temp.txt > file-5.txt
+cat file-5.txt
