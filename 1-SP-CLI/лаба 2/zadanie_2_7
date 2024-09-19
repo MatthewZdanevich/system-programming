@@ -1,0 +1,7 @@
+#!/bin/bash
+
+sort list.txt > t11.txt
+
+cat t11.txt
+
+mv t11.txt list.txt

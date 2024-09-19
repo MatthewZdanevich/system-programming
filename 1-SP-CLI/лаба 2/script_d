@@ -1,0 +1,6 @@
+#!/bin/bash
+if [ -f isit.txt ]
+then echo "file isit.txt exists!"
+else
+     echo "file isit.txt not found!"
+fi

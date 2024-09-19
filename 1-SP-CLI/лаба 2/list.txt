@@ -1,0 +1,6 @@
+./script_a
+./script_b
+./script_d
+./script_f
+./script_e
+./script_c

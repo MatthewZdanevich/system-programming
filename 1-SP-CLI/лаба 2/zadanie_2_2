@@ -1,0 +1,5 @@
+#!/bin/bash
+sort list.txt > t11.txt
+
+# Переместить содержимое t11.txt обратно в list.txt
+mv t11.txt list.txt

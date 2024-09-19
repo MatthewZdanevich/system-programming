@@ -1,0 +1,4 @@
+#!/bin/bash
+cut -d":" -f1 temp.txt > temp2.txt
+sort temp2.txt >temp.txt
+cat temp.txt
